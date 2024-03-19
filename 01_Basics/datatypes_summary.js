@@ -36,3 +36,27 @@ console.log(typeof(outsideTemp));
 
 // Dynamically-typed languages are those (like JavaScript) where the interpreter assigns variables a type at runtime based on the variable's value at the time
 
+// +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ //
+
+ //    Stack (Primitive) makes copy and Heap(Non - primitive) memory create reference
+
+ let myYoutubename = "upadhyayanjalidotcom"
+ let anothername = myYoutubename
+ anothername = "chaiaurcode"
+
+ console.log(myYoutubename);
+ console.log(anothername);
+
+ let userOne={
+    email : "user@google.com",
+    upi : "uder@byl"
+ }
+
+ let userTwo = userOne 
+ userTwo.email = "upadhyayanushka@gmail.com"
+ console.log(userOne.email);
+ console.log(userTwo.email);
+
+
+
+
