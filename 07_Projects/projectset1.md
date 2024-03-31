@@ -179,7 +179,7 @@ function newGame() {
 
 
 ```
-Project 6 solution 
+# Project 5 solution 
 ``` javascript
 const randomColor = function(){
     const hex = "0123456789ABCDEF"
