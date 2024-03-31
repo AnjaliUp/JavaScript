@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Chai aur code</h1>
+    <button id="stop">Stop</button>
+  </body>
+  <script>
+    // setTimeout(function(){    //This method will print my name after waiting 2 seconds but only once 
+    //   console.log("Anjali");   // SetTimeInterval is a function which will take a time and coninuously print my name
+    // }, 2000)
+
+    const sayAnjali = function () {
+      console.log("Anjali");
+    };
+    const changeText = function () {
+      document.querySelector("h1").innerHTML = "best JS series";
+    };
+    const changeMe = setTimeout(changeText, 2000);
+
+    document.querySelector("#stop").addEventListener("click", function () {
+      clearTimeout(changeMe); // for stopping the setTimeOut function 
+      console.log("STOPPED");
+    });
+  </script>
+</html>
+
+<!-- setTimeout is not any some core javascript function it's an api which browser gives
+ -->
