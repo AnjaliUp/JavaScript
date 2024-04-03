@@ -94,6 +94,14 @@ consumePromiseFive()
 
 //getAllUsers()
 
+
+// fetch() method starts the process of fetching a resource from the network, returning a promise which is fulfilled once the response is available.
+// It   only rejects when a network error is encountered
+// A fetch() promise doesnt reject on HTTP errors(404, etc). Instead, a then() handler must check the Response.ok properties
+
+
+
+
 fetch('https://github.com/AnjaliUp')
 .then((response) => {
     return response.json()
