@@ -99,7 +99,8 @@ consumePromiseFive()
 // It   only rejects when a network error is encountered
 // A fetch() promise doesnt reject on HTTP errors(404, etc). Instead, a then() handler must check the Response.ok properties
 
-
+//  The fetch() method takes one mandatory argument, the path to the resource you want to fetch. It returns a Promise that resolves to the Response to that request — as
+//  soon as the server responds with headers — even if the server response is an HTTP error status
 
 
 fetch('https://github.com/AnjaliUp')
